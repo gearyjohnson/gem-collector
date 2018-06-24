@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Crystal Collector Game</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+<audio>https://soundcloud.com/galimatias/alina-baraz-galimatias-pretty</audio>
+  
+  <div class="jumbotron">
+    <h2 class="text-center">Crystal Collector</h2>
+    <p class="text-center">You will be given a random number at the start of the game. There are five crystals below and one random wildcard gem. By clicking on a crystal you will add a specific amount of points to your total score. You win the game by matching yout total score to the random number, you lose the game if your total score goes above the random number. The value of each crystal is hidden from you until you click on it. Each time the game starts, the random number to be matched will change the values of each crystal.</p>
+    
+  </div>
+
+  <div class="container container-small">
+      <div class="row">
+          
+          
+      <div class="col-sm-4">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title">Gem sack</h5>
+        </div>
+        <div class="card-body text-center">
+          <p id="computer-pick">???</p>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+          <div class="card-header">
+            <h5 class="card-title">Gem collection worth</h5>
+          </div>
+          <div class="card-body text-center">
+            <p id="gem-worth">???</p>
+          </div>
+        </div>
+    </div>
+      <div class="col-sm-4">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title">Pick a Gem</h5>
+        </div>
+        <div class="card-body text-center">
+          <button id="button-1" class="border-0" data-value="4"><img src="https://cdn.shopify.com/s/files/1/0304/7045/products/BA32_1024x1024.jpg?v=1439384444" width="100px" height="100px" /></button>
+          <button id="button-2" class="border-0" data-value="2"><img src="https://pixfeeds.com/images/gemstones/emeralds/320-502976213-emerald.jpg" width="100px" height="100px" /></button>
+          <button id="button-3" class="border-0" data-value="3"><img src="https://rushmag.files.wordpress.com/2008/04/shutterstock_6126808.jpg?w=570&h=600" width="100px" height="100px" /></button>
+          <button id="button-4" class="border-0" data-value="1"><img src="https://cdn.shopify.com/s/files/1/0912/7764/files/safe_image_1_dfd63a86-36a6-4376-98c2-fc4f62258150_1024x1024.jpg?v=1487900248" width="100px" height="100px" /></button>
+          <button id="button-5" class="border-0" data-value="0"><img src="https://vignette.wikia.nocookie.net/powerlisting/images/d/d3/2013-10-Blue-Crystal-Abstract.jpg/revision/latest/scale-to-width-down/480?cb=20160227092023" width="100px" height="100px" /></button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title" id="win">Wins</h5>
+        </div>
+        <div class="card-body text-center">
+          <p id="winResult">0</p>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+          <div class="card-header">
+            <h5 class="card-title" id="loss">Losses</h5>
+          </div>
+          <div class="card-body text-center">
+            <p id="lossResult">0</p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="assets/javascript/game.js"></script>
+
+
+</script>
+</body>
+</html>

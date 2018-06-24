@@ -1,0 +1,39 @@
+/* style how you want  */
+p {
+    background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 12pt;
+}
+
+h1, h2, h5 {
+    color: purple;
+    font-family: cursive;
+}
+
+body{
+    background-image: url("https://lh3.googleusercontent.com/ZFL3czlF4qkPGzSl-OXQIyQRI7cCucRtidcNBPS8GObkRqNeHiyTm95JA-fHTgaCrPDOvfMgNi5Dlf0mAHUaL7x46lAVTaKF-rXcug=w1000-h666-rw-no"); 
+}
+/* beautiful rainbow print */
+img:hover {
+    animation: shake 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
